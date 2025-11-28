@@ -1,0 +1,15 @@
+---
+title: Moku:Delta Showcase + Q&A lunch 
+subtitle: December 2nd 2025
+layout: default
+modal-id: 1
+date: 2025-12-02
+img: moku-showcase.jpg
+thumbnail: moku-showcase.jpg
+alt: image-alt
+project-date: December 2nd 2025
+client: Liquid Instruments and Laser 2000
+category: Industry partnership, techinal event, networking social 
+description: Join Liquid Instruments and Laser 2000 for an exclusive seminar as we explore common test & measurement bottlenecks within applications such as Quantum, Optics/Photonics, Materials/Device Characterisation, Spectroscopy/Microscopy, Electronics Validation, MEMS Testing, and Photon Counting, and how these can be mitigated with an FPGA-based, software defined approach to instrumentation. 
+
+---

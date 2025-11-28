@@ -1,0 +1,15 @@
+---
+title: Thorlabs Mobile Photonics Lab
+subtitle: October 22nd-23rd 2025
+layout: default
+modal-id: 1
+date: 2025-10-02
+img: thorlabs-bike.jpg
+thumbnail: thorlabs-bike.jpg
+alt: image-alt
+project-date: October 22nd-23rd 2025
+client: Thorlabs
+category: Industry partnership, techinal event, live demos
+description: The UCL Photonics Society and the Department of Electronic and Electrical Engineering are partnering with Thorlabs to bring you live demos of an Optical Coherent Tomography (OCT) setup.
+link: https://www.eventbrite.com/e/thorlabs-mobile-photonics-lab-ucl-tickets-1828633966419
+---

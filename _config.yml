@@ -10,7 +10,7 @@ description: "UCL Photonics Society is a student-led society at University Colle
 # Team names, titles and social links
 people:
 - name: David Gerard
-  pic: 1
+  pic: david
   position: President
   social:
     - title: linkedin
