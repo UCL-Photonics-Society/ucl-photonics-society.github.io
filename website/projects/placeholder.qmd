@@ -1,0 +1,40 @@
+---
+title: "Projects"
+subtitle: "What we build, teach and explore together"
+title-block-banner: ../_assets/UCL-Newsletter-Masthead_800x152px_Dark-Purple_01.png
+---
+
+::: {.callout-note}
+## 🚧 Coming soon
+UCL Photonics Society's ongoing and past projects will soon be listed here.
+:::
+
+## What to expect
+
+::: {.card-grid}
+::: {.photon-card}
+<i class="bi bi-cpu"></i>
+
+#### Photonic IC design
+
+Tutorials and workflows for designing photonic integrated circuits with open-source tools such as GDSFactory.
+:::
+::: {.photon-card}
+<i class="bi bi-journal-code"></i>
+
+#### Reproducible code
+
+Guides to good practices for open-source scientific code, from our hands-on workshops.
+:::
+::: {.photon-card}
+<i class="bi bi-trophy"></i>
+
+#### Hackathon
+
+Our upcoming research-focused hackathon for hands-on, interdisciplinary collaboration.
+:::
+:::
+
+## Got an idea?
+
+Want to start or showcase a photonics project with the society? [Get in touch](mailto:photonics.society@ucl.ac.uk) or message us on [LinkedIn](https://www.linkedin.com/company/ucl-photonics-society/) — we'd love to hear from you! 💡
