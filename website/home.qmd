@@ -93,36 +93,36 @@ Pizza, drinks and good conversations with the photonics community.
 
 ::: {.card-grid}
 ::: {.photon-card}
-![](_assets/events/thorlabs-bike.jpg){fig-alt="Thorlabs Mobile Photonics Lab"}
+<i class="bi bi-house-gear"></i>
 
-[October 2025 & 2026]{.date}
+[October 2026]{.date}
 
-#### Thorlabs Mobile Photonics Lab
+#### Hacking Smart Homes with UCLightCommands × Thorlabs
 
-Live demos of Optical Coherence Tomography with Thorlabs' mobile lab, across UCL campus.
+Live demos run by society volunteers during the Thorlabs Mobile Photonics Bike week.
 :::
 ::: {.photon-card}
-![](_assets/events/moku-showcase.jpg){fig-alt="Moku:Delta showcase"}
+<i class="bi bi-book"></i>
 
-[December 2025]{.date}
+[August 2026]{.date}
 
-#### Moku:Delta Showcase + Q&A lunch
+#### Journal Club & Social: The Lawless Jungle of PIC Design
 
-FPGA-based, software-defined test & measurement with Liquid Instruments and Laser 2000.
+A journal club and social on photonic integrated circuit design.
 :::
 ::: {.photon-card}
-<i class="bi bi-cpu"></i>
+<i class="bi bi-lightning-charge"></i>
 
-[May 2025]{.date}
+[July 2026]{.date}
 
-#### UK/EU PIC design with GDSFactory+
+#### Laser 2000 — Photonics solutions showcase
 
-A hybrid workshop running in 7 universities simultaneously, with 157 sign-ups.
+Meet the Laser 2000 team: optical filtering, fibre inspection and lab automation.
 :::
 :::
 
 ::: {.callout-tip appearance="simple"}
-Want the full story? Read our [2025 – 2026 Annual Report](annual_reports/annual_report_25_26.qmd).
+Browse [all our past events](projects/overview.qmd), or read the full story in our [2025 – 2026 Annual Report](annual_reports/annual_report_25_26.qmd).
 :::
 
 ## Our Collaborators
