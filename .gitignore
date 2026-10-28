@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Python / uv
+.venv/
+__pycache__/
+
+# Quarto
+/.quarto/
+/.quarto_output/
+**/*.quarto_ipynb
