@@ -221,6 +221,36 @@ Once a committee member has reviewed it, click **Merge pull request**. The websi
 
 ---
 
+### 5. Exporting an annual report to PDF for Optica
+
+Each year, the chapter submits an annual report to [Optica](https://www.optica.org). We write it **once** as a `.qmd` page (so it's on the website), then export the same file to PDF for the submission.
+
+**① Create the new report** by copying last year's file, e.g. `website/annual_reports/annual_report_25_26.qmd` → `annual_report_26_27.qmd`, and update its title, author and content. Add it to the **Annual Reports** menu in `_quarto.yml`:
+
+```yaml
+        menu:
+          - text: "2026 – 2027"
+            href: website/annual_reports/annual_report_26_27.qmd
+```
+
+**② Export it to PDF** (in the VS Code terminal):
+
+```bash
+uv run quarto render website/annual_reports/annual_report_26_27.qmd --to typst
+```
+
+This uses [Typst](https://quarto.org/docs/output-formats/typst.html), which comes bundled with Quarto — nothing else to install.
+
+**③ Find the PDF** at `.quarto_output/website/annual_reports/annual_report_26_27.pdf`. Open it, check that everything looks right, and upload it to Optica.
+
+> [!NOTE]
+> The PDF is a generated file: **don't commit it** (`.quarto_output/` is ignored by Git). The `.qmd` file is the source of truth — re-run step ② whenever you change it.
+
+> [!TIP]
+> The website-only settings in the report header (like `title-block-banner`) are simply ignored in the PDF. To tweak the PDF layout (margins, fonts, page numbers…), see the [Typst format options](https://quarto.org/docs/reference/formats/typst.html).
+
+---
+
 ## 🆘 Need help?
 
 Contact the committee at [photonics.society@ucl.ac.uk](mailto:photonics.society@ucl.ac.uk) or on [LinkedIn](https://www.linkedin.com/company/ucl-photonics-society/).
