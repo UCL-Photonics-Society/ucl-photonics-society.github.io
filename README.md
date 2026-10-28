@@ -25,19 +25,20 @@ ucl-photonics-society.github.io/
     ├── projects/
     │   ├── overview.qmd         ← "Projects & Events" page
     │   ├── README.md            ← how this folder works
+    │   ├── _metadata.yml        ← settings shared by all pages in this folder
     │   └── 2025-12-02-moku-delta-showcase/   ← one folder per event (YYYY-MM-DD-name)
-    │       ├── _card.qmd        ← the event's card (title, date, description, venue)
+    │       ├── index.qmd        ← the event's page (its header also fills the event cards)
     │       └── banner.jpg       ← optional event picture
     ├── annual_reports/
     │   └── annual_report_25_26.qmd
-    └── _assets/                 ← images, logos and the colour theme (theme.scss)
+    └── _assets/                 ← images, logos, colour theme (theme.scss), card template
         └── logos/               ← partner logos
 ```
 
 - Every `.qmd` file in `website/` becomes a page of the website (`home.qmd` → `home.html`).
 - To add a page to the navigation bar, add it under `navbar:` in `_quarto.yml`.
 - Colours and styles (cards, buttons, hero banner…) are defined in `website/_assets/theme.scss`.
-- Files starting with `_` (like `_card.qmd`) are **not** pages: they are pieces of content inserted into other pages.
+- Files and folders starting with `_` (like `_assets/` or `_metadata.yml`) are **not** pages.
 - The built website goes to `.quarto_output/` — it is generated automatically, **never edit or commit it**.
 
 ---
@@ -227,40 +228,51 @@ Once a committee member has reviewed it, click **Merge pull request**. The websi
 
 ### 5. Adding an event
 
-Each event lives in its own folder in `website/projects/`, and its card is **reused** on the *Projects & Events* page and (for the latest ones) in the home page highlights. Write it once, show it anywhere!
+Each event is a small page in its own folder in `website/projects/`. Event cards are **generated automatically** from these pages:
+
+- the *Projects & Events* page lists every event, grouped by academic year, newest first;
+- the home page **Recent Highlights** always shows the **3 most recent** events (by `date`).
+
+So adding an event = adding one folder. No other file to edit! ✨
 
 **① Create a folder** named after the event date and a short name: `website/projects/2026-11-05-my-new-event/`
 
-**② Add the card** in a file called `_card.qmd` inside that folder (copy one from another event and edit it):
+**② Add `index.qmd`** inside that folder (copy one from another event and edit it):
 
 ```markdown
-::: {.photon-card}
-![](/website/projects/2026-11-05-my-new-event/banner.jpg){fig-alt="Short image description"}
+---
+title: "My New Event"
+date: 2026-11-05                         # used to sort events (YYYY-MM-DD)
+date-display: "5 – 6 November 2026"      # optional: only for multi-day events
+description: "One or two sentences describing the event."
+venue: "Malet Place Engineering Building"
+academic-year: "2026-2027"               # which section of the Projects & Events page
+image: banner.jpg
+image-alt: "Short image description"
+---
 
-[5 November 2026]{.date}
+![](banner.jpg){fig-alt="Short image description"}
 
-#### My New Event
+<i class="bi bi-calendar-event"></i> **5 – 6 November 2026** · <i class="bi bi-geo-alt"></i> Malet Place Engineering Building
 
-One or two sentences describing the event.
-
-[<i class="bi bi-geo-alt"></i> Malet Place Engineering Building]{.venue}
-:::
+[← All projects & events](../overview.qmd)
 ```
 
-- **Picture (optional):** save it as `banner.jpg` in the same folder. No picture? Replace the image line with an icon such as `<i class="bi bi-lightbulb"></i>` ([browse icons](https://icons.getbootstrap.com)).
-- Image paths start with `/` (the root of the repository) so the card works on every page that includes it.
+Everything between the two `---` lines fills the card; everything below is the event's own page (clicking a card opens it). Feel free to add photos or a short write-up there!
 
-**③ Show the card** by adding one line in the right academic year of `website/projects/overview.qmd` (newest first):
+**③ Add the picture** as `banner.jpg` in the same folder (a 2:1 picture looks best, e.g. 1000 × 500 px). No picture? Remove the `image:` / `image-alt:` lines and the `![](banner.jpg)` line.
 
-```markdown
-{{< include 2026-11-05-my-new-event/_card.qmd >}}
-```
+**④ Preview** with `uv run quarto preview`: the new card appears on both pages. 🎉
 
-To feature it on the home page too, add it under **Recent Highlights** in `website/home.qmd` (the path starts with `projects/` there), and remove the oldest one so there are always three:
-
-```markdown
-{{< include projects/2026-11-05-my-new-event/_card.qmd >}}
-```
+> [!NOTE]
+> **First event of a new academic year?** Its section must be created once in `website/projects/overview.qmd`: copy one of the blocks under `listing:` in the header, change the two `2025-2026` values (`id` and `academic-year`), then add the matching heading and placeholder in the page:
+>
+> ```markdown
+> ## 2026 – 2027
+>
+> ::: {#events-2026-2027}
+> :::
+> ```
 
 ---
 

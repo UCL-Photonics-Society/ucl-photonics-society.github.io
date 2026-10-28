@@ -5,37 +5,48 @@ This folder holds the **Projects & Events** page and one folder per event.
 ```text
 projects/
 ├── overview.qmd                         ← the "Projects & Events" page
+├── _metadata.yml                        ← settings shared by every page in this folder
 ├── README.md                            ← this file (not part of the website)
 └── 2025-12-02-moku-delta-showcase/      ← one folder per event
-    ├── _card.qmd                        ← the event's card
+    ├── index.qmd                        ← the event's page
     └── banner.jpg                       ← optional event picture
 ```
 
 ## How it fits together
 
 ```text
- 2025-12-02-moku-delta-showcase/_card.qmd
+ 2025-12-02-moku-delta-showcase/index.qmd
+   header: title, date, description, venue, academic-year, image
           │
-          ├──► overview.qmd   {{< include 2025-12-02-moku-delta-showcase/_card.qmd >}}
+          ├──► overview.qmd   all events, one section per academic-year, newest first
           │
-          └──► ../home.qmd    {{< include projects/2025-12-02-moku-delta-showcase/_card.qmd >}}
-                              (only the 3 most recent events, under "Recent Highlights")
+          └──► ../home.qmd    the 3 most recent events ("Recent Highlights")
 ```
 
-Each card is written **once** and inserted wherever it's needed with Quarto's
-[`include`](https://quarto.org/docs/authoring/includes.html) shortcode.
-Edit the `_card.qmd` file and every page showing it updates.
+Both pages use Quarto [listings](https://quarto.org/docs/websites/website-listings.html): they look for every
+`*/index.qmd` in this folder and build a card from each page's header, using the card template
+`../_assets/event-card.ejs.md`. **Adding a folder is enough.** Nothing else needs editing
+(except for the first event of a new academic year, see below).
+
+Clicking a card opens the event page itself (the body of `index.qmd`).
 
 ## Rules
 
 | What | Rule | Why |
 |------|------|-----|
 | Folder name | `YYYY-MM-DD-short-name` (date of the event) | Folders sort in date order |
-| Card file | Always named `_card.qmd` | The `_` stops Quarto from building it as a page on its own |
-| Picture | Named `banner.jpg`, in the event folder | Keeps everything about an event in one place |
-| Image path | Start at the repository root: `/website/projects/<folder>/banner.jpg` | The card works from any page that includes it |
-| Order in `overview.qmd` | Under the right academic year, newest first | |
+| Event page | Always named `index.qmd` | Listings look for `*/index.qmd` |
+| `date` | `YYYY-MM-DD`, the (first) day of the event | Sorts events and picks the 3 latest for the home page |
+| `date-display` | Optional, e.g. `"13 – 16 October 2026"` | Replaces `date` on cards for multi-day events |
+| `academic-year` | e.g. `"2025-2026"` | Chooses the section on the overview page |
+| Picture | `banner.jpg` in the event folder, ideally 2:1 | Cards show it in a 2:1 frame |
+
+## New academic year
+
+Each academic year is one listing in the header of `overview.qmd`. For the first event of a new year,
+copy a block under `listing:`, change `id` and `academic-year`, and add the matching heading and
+`::: {#events-YYYY-YYYY}` placeholder in the page.
 
 ## Adding an event
 
-See **"5. Adding an event"** in the [main README](../../README.md) for the step-by-step guide and a card template.
+See **"5. Adding an event"** in the [main README](../../README.md) for the step-by-step guide and a template.
