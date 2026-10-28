@@ -53,7 +53,7 @@ Our 2026 – 2027 events are being planned! Follow us on [Eventbrite](https://ww
 :::
 
 ::: {.callout-tip appearance="simple"}
-Looking for more detail? Our [2024 – 2025 Annual Report](../annual_reports/annual_report_24_25.qmd) covers every event, including talks and poster presentations.
+Looking for more detail? Our [2025 – 2026](../annual_reports/annual_report_25_26.qmd) and [2024 – 2025](../annual_reports/annual_report_24_25.qmd) annual reports cover every event, including talks and poster presentations.
 :::
 
 ## Coming up: projects

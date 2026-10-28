@@ -104,7 +104,7 @@ Pizza, drinks and good conversations with the photonics community.
 :::
 
 ::: {.callout-tip appearance="simple"}
-Browse [all our past events](projects/overview.qmd), or read the full story in our [2024 – 2025 Annual Report](annual_reports/annual_report_24_25.qmd).
+Browse [all our past events](projects/overview.qmd), or read the full story in our [2025 – 2026 Annual Report](annual_reports/annual_report_25_26.qmd).
 :::
 
 ## Our Collaborators
