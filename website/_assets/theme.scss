@@ -1,0 +1,210 @@
+/*-- scss:defaults --*/
+
+// Palette taken from the society logo + white for contrast
+$photon-night:  #160628; // logo background
+$photon-violet: #7b2cdf; // light-bulb outline
+$photon-lilac:  #c58ae6; // glowing laser lines (background.png)
+$photon-cream:  #fff3d6; // logo lettering
+$ucl-purple:    #3a1f4f; // UCL masthead
+
+$body-bg:    #ffffff;
+$body-color: #231433;
+$primary:    $photon-violet;
+$secondary:  $ucl-purple;
+$link-color: $photon-violet;
+
+$navbar-bg: $photon-night;
+$navbar-fg: $photon-cream;
+$navbar-hl: $photon-lilac;
+$footer-bg: $photon-night;
+$footer-fg: $photon-cream;
+
+$font-family-sans-serif: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-weight: 700;
+
+$callout-color-note: $photon-violet;
+$callout-color-tip:  #2bb673;
+
+/*-- scss:rules --*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
+
+// Navbar: subtle glow under the bar
+.navbar {
+  box-shadow: 0 2px 18px rgba($photon-violet, 0.45);
+  .navbar-brand img { max-height: 42px; border-radius: 8px; }
+}
+
+h2 {
+  border-bottom: none;
+  position: relative;
+  padding-bottom: 0.35rem;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 64px;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, $photon-violet, $photon-lilac);
+  }
+}
+
+// ---------- Hero (home page) ----------
+.hero {
+  // background-image is set inline in home.qmd (relative paths break in compiled CSS)
+  background: $photon-night center / cover no-repeat;
+  color: $photon-cream;
+  border-radius: 18px;
+  padding: 3rem 2rem;
+  margin: 1rem 0 2.5rem;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba($photon-night, 0.35);
+
+  img.hero-logo {
+    width: 170px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba($photon-lilac, 0.65);
+    margin-bottom: 1.2rem;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    margin: 0;
+    color: $photon-cream;
+  }
+  .hero-tagline {
+    font-size: 1.15rem;
+    color: $photon-lilac;
+    margin: 0.5rem 0 1.5rem;
+  }
+}
+
+.btn-glow {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff !important;
+  background: $photon-violet;
+  box-shadow: 0 0 16px rgba($photon-lilac, 0.6);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  &:hover { transform: translateY(-2px); box-shadow: 0 0 26px rgba($photon-lilac, 0.9); }
+  &.btn-outline {
+    background: transparent;
+    border: 2px solid $photon-cream;
+    color: $photon-cream !important;
+  }
+}
+
+// ---------- Stats strip ----------
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+  .stat {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 14px;
+    background: linear-gradient(135deg, $ucl-purple, $photon-violet);
+    color: #fff;
+    .num { font-size: 2rem; font-weight: 800; color: $photon-cream; display: block; }
+    .label { font-size: 0.85rem; opacity: 0.9; }
+  }
+}
+
+// ---------- Cards (activities / events) ----------
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+.photon-card {
+  background: #fff;
+  border: 1px solid rgba($photon-violet, 0.18);
+  border-top: 4px solid $photon-violet;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 18px rgba($photon-night, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  &:hover { transform: translateY(-4px); box-shadow: 0 8px 26px rgba($photon-violet, 0.25); }
+
+  .bi { font-size: 2rem; color: $photon-violet; }
+  h4, h5 { margin: 0.5rem 0 0.3rem; font-weight: 700; }
+  p { margin: 0; font-size: 0.92rem; color: lighten($body-color, 25%); }
+  img { width: 100%; border-radius: 10px; margin-bottom: 0.6rem; }
+  .date { font-size: 0.8rem; font-weight: 600; color: $photon-violet; text-transform: uppercase; letter-spacing: 0.05em; }
+}
+
+// ---------- Partner logos ----------
+.logo-wall {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  align-items: center;
+  @media (max-width: 575.98px) { grid-template-columns: repeat(2, 1fr); }
+  margin: 1.5rem 0;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    padding: 0.8rem;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid rgba($photon-violet, 0.15);
+    transition: box-shadow 0.15s ease;
+    &:hover { box-shadow: 0 0 18px rgba($photon-lilac, 0.6); }
+  }
+  img { max-height: 100%; max-width: 100%; object-fit: contain; }
+}
+
+// ---------- Social buttons ----------
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.2rem 0;
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: $photon-night;
+    border: 2px solid $photon-violet;
+    &:hover { background: $photon-violet; color: #fff; }
+  }
+}
+
+// Markdown wraps inline links in a <p>: let the links themselves be grid/flex items
+.logo-wall > p,
+.social-row > p { display: contents; }
+
+// ---------- Title banner: keep the UCL masthead logo visible ----------
+.quarto-title-block .quarto-title-banner {
+  background-color: $ucl-purple;
+  background-size: contain !important;
+  background-position: right center !important;
+  background-repeat: no-repeat !important;
+  min-height: 152px;
+  border-bottom: 4px solid $photon-violet;
+  .title { color: #fff; }
+  .subtitle { color: $photon-lilac; }
+}
+
+// Small screens: the masthead logo would overlap the title
+@media (max-width: 767.98px) {
+  .quarto-title-block .quarto-title-banner { background-image: none !important; min-height: 0; }
+  .hero .hero-title { font-size: 1.6rem; }
+}

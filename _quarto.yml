@@ -1,0 +1,66 @@
+project:
+  type: website
+  output-dir: .quarto_output
+  # Only the website pages are rendered (README.md is for contributors, not visitors)
+  render:
+    - website/**/*.qmd
+  # Images, logos and PDFs are always copied to the built site
+  resources:
+    - website/_assets/
+    - website/annual_reports/*.pdf
+
+website:
+  title: "UCL Photonics Society"
+  description: "A student-led Optica chapter bringing together the optics & photonics community at UCL."
+  site-url: https://ucl-photonics-society.github.io
+  favicon: website/_assets/logo_purple.png
+  page-navigation: true
+  back-to-top-navigation: true
+  navbar:
+    logo: website/_assets/logo_purple.png
+    title: "UCL Photonics Society"
+    left:
+      - text: "Home"
+        href: website/home.qmd
+      - text: "Projects"
+        href: website/projects/placeholder.qmd
+      - text: "Annual Reports"
+        menu:
+          - text: "2025 – 2026"
+            href: website/annual_reports/annual_report_25_26.qmd
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/company/ucl-photonics-society/
+        aria-label: LinkedIn
+      - icon: instagram
+        href: https://www.instagram.com/ucl.photonicssociety/
+        aria-label: Instagram
+      - icon: github
+        href: https://github.com/UCL-Photonics-Society
+        aria-label: GitHub
+      - icon: ticket-perforated
+        href: https://www.eventbrite.co.uk/o/102446916411
+        aria-label: Eventbrite
+  page-footer:
+    background: "#160628"
+    left: "© UCL Photonics Society · University College London, Gower Street, London WC1E 6BT"
+    right:
+      - icon: envelope
+        href: mailto:photonics.society@ucl.ac.uk
+        aria-label: Email
+      - icon: linkedin
+        href: https://www.linkedin.com/company/ucl-photonics-society/
+        aria-label: LinkedIn
+      - icon: instagram
+        href: https://www.instagram.com/ucl.photonicssociety/
+        aria-label: Instagram
+
+format:
+  html:
+    theme:
+      - cosmo
+      - website/_assets/theme.scss
+    toc: true
+    toc-title: "On this page"
+    smooth-scroll: true
+    link-external-newwindow: true
