@@ -4,10 +4,9 @@ project:
   # Only the website pages are rendered (README.md is for contributors, not visitors)
   render:
     - website/**/*.qmd
-  # Images, logos and PDFs are always copied to the built site
+  # Images and logos are always copied to the built site
   resources:
     - website/_assets/
-    - website/annual_reports/*.pdf
 
 website:
   title: "UCL Photonics Society"

@@ -25,8 +25,7 @@ ucl-photonics-society.github.io/
     ├── projects/
     │   └── placeholder.qmd      ← projects page
     ├── annual_reports/
-    │   ├── annual_report_25_26.qmd
-    │   └── optica_annual_report_2526.pdf
+    │   └── annual_report_25_26.qmd
     └── _assets/                 ← images, logos and the colour theme (theme.scss)
         ├── logos/               ← partner logos
         └── events/              ← event pictures
