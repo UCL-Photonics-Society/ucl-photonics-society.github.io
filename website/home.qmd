@@ -94,9 +94,9 @@ Pizza, drinks and good conversations with the photonics community.
 ::: {.card-grid}
 {{< include projects/2026-10-13-hacking-smart-homes/_card.qmd >}}
 
-{{< include projects/2026-07-21-laser2000-photonics-showcase/_card.qmd >}}
+{{< include projects/2026-08-14-uclightcommands-hackathon/_card.qmd >}}
 
-{{< include projects/2026-01-16-laser2000-networking-showcase/_card.qmd >}}
+{{< include projects/2026-07-21-laser2000-photonics-showcase/_card.qmd >}}
 :::
 
 ::: {.callout-tip appearance="simple"}
