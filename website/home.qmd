@@ -92,33 +92,11 @@ Pizza, drinks and good conversations with the photonics community.
 ## Recent Highlights
 
 ::: {.card-grid}
-::: {.photon-card}
-<i class="bi bi-house-gear"></i>
+{{< include projects/2026-10-13-hacking-smart-homes/_card.qmd >}}
 
-[October 2026]{.date}
+{{< include projects/2026-08-14-journal-club-pic-design/_card.qmd >}}
 
-#### Hacking Smart Homes with UCLightCommands × Thorlabs
-
-Live demos run by society volunteers during the Thorlabs Mobile Photonics Bike week.
-:::
-::: {.photon-card}
-<i class="bi bi-book"></i>
-
-[August 2026]{.date}
-
-#### Journal Club & Social: The Lawless Jungle of PIC Design
-
-A journal club and social on photonic integrated circuit design.
-:::
-::: {.photon-card}
-<i class="bi bi-lightning-charge"></i>
-
-[July 2026]{.date}
-
-#### Laser 2000 — Photonics solutions showcase
-
-Meet the Laser 2000 team: optical filtering, fibre inspection and lab automation.
-:::
+{{< include projects/2026-07-21-laser2000-photonics-showcase/_card.qmd >}}
 :::
 
 ::: {.callout-tip appearance="simple"}
