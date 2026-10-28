@@ -30,7 +30,8 @@ ucl-photonics-society.github.io/
     │       ├── index.qmd        ← the event's page (its header also fills the event cards)
     │       └── banner.jpg       ← optional event picture
     ├── annual_reports/
-    │   └── annual_report_24_25.qmd
+    │   ├── annual_report_24_25.qmd
+    │   └── annual_report_25_26.qmd
     └── _assets/                 ← images, logos, colour theme (theme.scss), card template
         └── logos/               ← partner logos
 ```
@@ -280,23 +281,23 @@ Everything between the two `---` lines fills the card; everything below is the e
 
 Each year, the chapter submits an annual report to [Optica](https://www.optica.org). We write it **once** as a `.qmd` page (so it's on the website), then export the same file to PDF for the submission.
 
-**① Create the new report** by copying last year's file, e.g. `website/annual_reports/annual_report_24_25.qmd` → `annual_report_25_26.qmd`, and update its title, author and content. Add it to the **Annual Reports** menu in `_quarto.yml`:
+**① Create the new report** by copying last year's file, e.g. `website/annual_reports/annual_report_25_26.qmd` → `annual_report_26_27.qmd`, and update its title, author and content. Add it to the **Annual Reports** menu in `_quarto.yml`:
 
 ```yaml
         menu:
-          - text: "2025 – 2026"
-            href: website/annual_reports/annual_report_25_26.qmd
+          - text: "2026 – 2027"
+            href: website/annual_reports/annual_report_26_27.qmd
 ```
 
 **② Export it to PDF** (in the VS Code terminal):
 
 ```bash
-uv run quarto render website/annual_reports/annual_report_25_26.qmd --to typst
+uv run quarto render website/annual_reports/annual_report_26_27.qmd --to typst
 ```
 
 This uses [Typst](https://quarto.org/docs/output-formats/typst.html), which comes bundled with Quarto — nothing else to install.
 
-**③ Find the PDF** at `.quarto_output/website/annual_reports/annual_report_25_26.pdf`. Open it, check that everything looks right, and upload it to Optica.
+**③ Find the PDF** at `.quarto_output/website/annual_reports/annual_report_26_27.pdf`. Open it, check that everything looks right, and upload it to Optica.
 
 > [!NOTE]
 > The PDF is a generated file: **don't commit it** (`.quarto_output/` is ignored by Git). The `.qmd` file is the source of truth — re-run step ② whenever you change it.
