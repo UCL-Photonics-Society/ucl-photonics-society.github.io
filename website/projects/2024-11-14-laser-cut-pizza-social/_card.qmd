@@ -1,5 +1,5 @@
 ::: {.photon-card}
-<i class="bi bi-pie-chart"></i>
+![](/website/projects/2024-11-14-laser-cut-pizza-social/banner.jpg){fig-alt="Laser Cut Social"}
 
 [14 November 2024]{.date}
 

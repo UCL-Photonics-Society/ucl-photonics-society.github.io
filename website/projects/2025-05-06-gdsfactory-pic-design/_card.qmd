@@ -1,5 +1,5 @@
 ::: {.photon-card}
-<i class="bi bi-cpu"></i>
+![](/website/projects/2025-05-06-gdsfactory-pic-design/banner.jpg){fig-alt="UK/EU PIC design with GDSFactory"}
 
 [6 May 2025]{.date}
 

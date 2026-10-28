@@ -1,5 +1,5 @@
 ::: {.photon-card}
-<i class="bi bi-house-gear"></i>
+![](/website/projects/2026-10-13-hacking-smart-homes/banner.jpg){fig-alt="Hacking Smart Homes with UCLightCommands × Thorlabs"}
 
 [13 October 2026]{.date}
 

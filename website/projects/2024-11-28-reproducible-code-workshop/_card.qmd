@@ -1,5 +1,5 @@
 ::: {.photon-card}
-<i class="bi bi-journal-code"></i>
+![](/website/projects/2024-11-28-reproducible-code-workshop/banner.jpg){fig-alt="Good Practices for Reproducible Open Source Code"}
 
 [28 November 2024]{.date}
 

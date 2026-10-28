@@ -1,5 +1,5 @@
 ::: {.photon-card}
-<i class="bi bi-router"></i>
+![](/website/projects/2026-01-16-laser2000-networking-showcase/banner.jpg){fig-alt="Laser 2000 — Networking & Photonics equipment showcase"}
 
 [16 January 2026]{.date}
 

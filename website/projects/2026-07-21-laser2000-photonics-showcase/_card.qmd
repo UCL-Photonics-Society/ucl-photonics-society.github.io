@@ -1,5 +1,5 @@
 ::: {.photon-card}
-<i class="bi bi-lightning-charge"></i>
+![](/website/projects/2026-07-21-laser2000-photonics-showcase/banner.jpg){fig-alt="Laser 2000 — Photonics solutions showcase"}
 
 [21 July 2026]{.date}
 

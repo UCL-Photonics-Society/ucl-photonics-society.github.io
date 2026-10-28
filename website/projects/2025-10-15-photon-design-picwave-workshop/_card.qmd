@@ -1,5 +1,5 @@
 ::: {.photon-card}
-<i class="bi bi-diagram-3"></i>
+![](/website/projects/2025-10-15-photon-design-picwave-workshop/banner.jpg){fig-alt="Laser Physics & PICWave Workshop"}
 
 [15 October 2025]{.date}
 
