@@ -25,6 +25,8 @@ website:
         href: website/projects/overview.qmd
       - text: "Annual Reports"
         menu:
+          - text: "2025 – 2026"
+            href: website/annual_reports/annual_report_25_26.qmd
           - text: "2024 – 2025"
             href: website/annual_reports/annual_report_24_25.qmd
     right:
