@@ -1,0 +1,11 @@
+::: {.photon-card}
+<i class="bi bi-cpu"></i>
+
+[6 May 2025]{.date}
+
+#### UK/EU PIC design with GDSFactory
+
+Hybrid workshop (Python & no-code) across 7 universities in the UK and EU. 157 sign-ups!
+
+[<i class="bi bi-globe-europe-africa"></i> Hybrid, 7 universities]{.venue}
+:::

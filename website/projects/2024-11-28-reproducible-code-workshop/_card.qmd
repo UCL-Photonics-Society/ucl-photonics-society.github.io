@@ -1,0 +1,11 @@
+::: {.photon-card}
+<i class="bi bi-journal-code"></i>
+
+[28 November 2024]{.date}
+
+#### Good Practices for Reproducible Open Source Code
+
+Lecture by a staff engineer at Xelix, followed by a hands-on lab cleaning up a messy codebase.
+
+[<i class="bi bi-geo-alt"></i> 1-19 Torrington Place]{.venue}
+:::

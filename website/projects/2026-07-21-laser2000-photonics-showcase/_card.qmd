@@ -1,0 +1,11 @@
+::: {.photon-card}
+<i class="bi bi-lightning-charge"></i>
+
+[21 July 2026]{.date}
+
+#### Laser 2000 — Photonics solutions showcase
+
+Walk-in event to meet the Laser 2000 team: optical filtering, fibre inspection and lab automation.
+
+[<i class="bi bi-geo-alt"></i> UCL Engineering Front Building, Foyer G02]{.venue}
+:::

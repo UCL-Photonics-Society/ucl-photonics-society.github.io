@@ -1,0 +1,11 @@
+::: {.photon-card}
+<i class="bi bi-pie-chart"></i>
+
+[14 November 2024]{.date}
+
+#### Laser-Cut Pizza Social
+
+A slice of our upcoming workshops & events — with pizza! 🍕 50 attendees.
+
+[<i class="bi bi-geo-alt"></i> Roberts Building, Barlow Room]{.venue}
+:::
