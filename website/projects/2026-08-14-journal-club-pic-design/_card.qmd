@@ -1,9 +1,0 @@
-::: {.photon-card}
-<i class="bi bi-book"></i>
-
-[14 August 2026]{.date}
-
-#### Journal Club & Social: The Lawless Jungle of PIC Design
-
-A journal club and social on photonic integrated circuit design.
-:::

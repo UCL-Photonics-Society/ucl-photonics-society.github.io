@@ -6,7 +6,7 @@ title-block-banner: ../_assets/UCL-Newsletter-Masthead_800x152px_Dark-Purple_01.
 
 ::: {.stats}
 ::: {.stat}
-[10]{.num}[Eventbrite events]{.label}
+[9]{.num}[Eventbrite events]{.label}
 :::
 ::: {.stat}
 [3]{.num}[Academic years]{.label}
@@ -29,8 +29,6 @@ Our 2026 – 2027 events are being planned! Follow us on [Eventbrite](https://ww
 
 ::: {.card-grid}
 {{< include 2026-10-13-hacking-smart-homes/_card.qmd >}}
-
-{{< include 2026-08-14-journal-club-pic-design/_card.qmd >}}
 
 {{< include 2026-07-21-laser2000-photonics-showcase/_card.qmd >}}
 
