@@ -22,7 +22,7 @@ website:
       - text: "Home"
         href: website/home.qmd
       - text: "Projects"
-        href: website/projects/placeholder.qmd
+        href: website/projects/overview.qmd
       - text: "Annual Reports"
         menu:
           - text: "2025 – 2026"

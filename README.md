@@ -23,7 +23,7 @@ ucl-photonics-society.github.io/
 └── website/                     ← ✏️ ALL THE PAGES LIVE HERE
     ├── home.qmd                 ← home page
     ├── projects/
-    │   └── placeholder.qmd      ← projects page
+    │   └── overview.qmd         ← projects page
     ├── annual_reports/
     │   └── annual_report_25_26.qmd
     └── _assets/                 ← images, logos and the colour theme (theme.scss)
