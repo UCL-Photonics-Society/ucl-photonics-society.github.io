@@ -24,6 +24,7 @@ ucl-photonics-society.github.io/
     ├── home.qmd                 ← home page
     ├── projects/
     │   ├── overview.qmd         ← "Projects & Events" page
+    │   ├── README.md            ← how this folder works
     │   └── 2025-12-02-moku-delta-showcase/   ← one folder per event (YYYY-MM-DD-name)
     │       ├── _card.qmd        ← the event's card (title, date, description, venue)
     │       └── banner.jpg       ← optional event picture
