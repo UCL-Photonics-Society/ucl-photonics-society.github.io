@@ -19,7 +19,8 @@ ucl-photonics-society.github.io/
 ├── pyproject.toml / uv.lock     ← Python environment (managed by uv, don't edit by hand)
 ├── README.md                    ← this guide
 ├── .github/workflows/
-│   └── publish.yml              ← automatic build & deployment (GitHub Actions)
+│   ├── build-check.yml          ← checks that pull requests build (GitHub Actions)
+│   └── publish.yml              ← publishes the website when main changes (GitHub Actions)
 └── website/                     ← ✏️ ALL THE PAGES LIVE HERE
     ├── home.qmd                 ← home page
     ├── projects/
@@ -176,8 +177,10 @@ How our website gets online:
                   🌐 published at https://ucl-photonics-society.github.io
 ```
 
-- The automation lives in `.github/workflows/publish.yml` and runs on GitHub's servers — nothing to do on your side.
-- You can follow it in the **Actions** tab of the repository. A green ✅ means the website was built (and, on `main`, published) successfully; a red ❌ means something is broken — click on it to read the error.
+- The automation lives in `.github/workflows/` and runs on GitHub's servers — nothing to do on your side:
+  - **Check website build** (`build-check.yml`) runs on every pull request to `main`, and again on every new commit pushed to its branch. It only checks that the website builds.
+  - **Publish website** (`publish.yml`) runs on every commit on `main` (i.e. when a pull request is merged) and puts the new website online.
+- You can follow it in the **Actions** tab of the repository. A green ✅ means the website was built (or published) successfully; a red ❌ means something is broken — click on it to read the error.
 - Changes usually appear online **1–2 minutes** after merging.
 
 > [!IMPORTANT]
@@ -220,7 +223,7 @@ git push                                     # send them to GitHub
 Back on GitHub, a yellow banner shows *"update-committee-2026 had recent pushes"* → click **Compare & pull request**. Make sure it goes **into `main`**, describe your changes, and click **Create pull request**.
 
 **⑥ Check that the tests pass**
-At the bottom of the PR, wait for the **Build & deploy website** check to turn green ✅. If it's red ❌, click **Details** to see the error, fix it on your branch, and push again (steps ③–④) — the PR updates automatically.
+At the bottom of the PR, wait for the **Check website build** check to turn green ✅. If it's red ❌, click **Details** to see the error, fix it on your branch, and push again (steps ③–④) — the PR updates automatically.
 
 **⑦ Merge 🎉**
 Once a committee member has reviewed it, click **Merge pull request**. The website is rebuilt and published automatically within a couple of minutes.
