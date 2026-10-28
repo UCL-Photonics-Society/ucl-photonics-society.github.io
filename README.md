@@ -23,17 +23,20 @@ ucl-photonics-society.github.io/
 └── website/                     ← ✏️ ALL THE PAGES LIVE HERE
     ├── home.qmd                 ← home page
     ├── projects/
-    │   └── overview.qmd         ← projects page
+    │   ├── overview.qmd         ← "Projects & Events" page
+    │   └── 2025-12-02-moku-delta-showcase/   ← one folder per event (YYYY-MM-DD-name)
+    │       ├── _card.qmd        ← the event's card (title, date, description, venue)
+    │       └── banner.jpg       ← optional event picture
     ├── annual_reports/
     │   └── annual_report_25_26.qmd
     └── _assets/                 ← images, logos and the colour theme (theme.scss)
-        ├── logos/               ← partner logos
-        └── events/              ← event pictures
+        └── logos/               ← partner logos
 ```
 
 - Every `.qmd` file in `website/` becomes a page of the website (`home.qmd` → `home.html`).
 - To add a page to the navigation bar, add it under `navbar:` in `_quarto.yml`.
 - Colours and styles (cards, buttons, hero banner…) are defined in `website/_assets/theme.scss`.
+- Files starting with `_` (like `_card.qmd`) are **not** pages: they are pieces of content inserted into other pages.
 - The built website goes to `.quarto_output/` — it is generated automatically, **never edit or commit it**.
 
 ---
@@ -132,7 +135,7 @@ Some **bold** text, some *italic* text and a [link](https://www.optica.org).
 - a bullet point
 - another one
 
-![An image](../_assets/events/thorlabs-bike.jpg)
+![An image](/website/_assets/logo_purple.png)
 
 ::: {.callout-tip}
 A coloured information box!
@@ -221,7 +224,46 @@ Once a committee member has reviewed it, click **Merge pull request**. The websi
 
 ---
 
-### 5. Exporting an annual report to PDF for Optica
+### 5. Adding an event
+
+Each event lives in its own folder in `website/projects/`, and its card is **reused** on the *Projects & Events* page and (for the latest ones) in the home page highlights. Write it once, show it anywhere!
+
+**① Create a folder** named after the event date and a short name: `website/projects/2026-11-05-my-new-event/`
+
+**② Add the card** in a file called `_card.qmd` inside that folder (copy one from another event and edit it):
+
+```markdown
+::: {.photon-card}
+![](/website/projects/2026-11-05-my-new-event/banner.jpg){fig-alt="Short image description"}
+
+[5 November 2026]{.date}
+
+#### My New Event
+
+One or two sentences describing the event.
+
+[<i class="bi bi-geo-alt"></i> Malet Place Engineering Building]{.venue}
+:::
+```
+
+- **Picture (optional):** save it as `banner.jpg` in the same folder. No picture? Replace the image line with an icon such as `<i class="bi bi-lightbulb"></i>` ([browse icons](https://icons.getbootstrap.com)).
+- Image paths start with `/` (the root of the repository) so the card works on every page that includes it.
+
+**③ Show the card** by adding one line in the right academic year of `website/projects/overview.qmd` (newest first):
+
+```markdown
+{{< include 2026-11-05-my-new-event/_card.qmd >}}
+```
+
+To feature it on the home page too, add it under **Recent Highlights** in `website/home.qmd` (the path starts with `projects/` there), and remove the oldest one so there are always three:
+
+```markdown
+{{< include projects/2026-11-05-my-new-event/_card.qmd >}}
+```
+
+---
+
+### 6. Exporting an annual report to PDF for Optica
 
 Each year, the chapter submits an annual report to [Optica](https://www.optica.org). We write it **once** as a `.qmd` page (so it's on the website), then export the same file to PDF for the submission.
 
