@@ -208,7 +208,8 @@ a.event-card {
 // ---------- Title banner: keep the UCL masthead logo visible ----------
 .quarto-title-block .quarto-title-banner {
   background-color: $ucl-purple;
-  background-size: contain !important;
+  // Fixed height so the logo stays the same size however long the title/description is
+  background-size: auto 152px !important;
   background-position: right center !important;
   background-repeat: no-repeat !important;
   min-height: 152px;
@@ -218,7 +219,9 @@ a.event-card {
 }
 
 // Small screens: the masthead logo would overlap the title
-@media (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
   .quarto-title-block .quarto-title-banner { background-image: none !important; min-height: 0; }
+}
+@media (max-width: 767.98px) {
   .hero .hero-title { font-size: 1.6rem; }
 }
