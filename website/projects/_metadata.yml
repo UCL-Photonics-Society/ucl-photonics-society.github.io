@@ -1,0 +1,3 @@
+# Settings shared by every page in website/projects/ (overview + event pages)
+title-block-banner: ../_assets/UCL-Newsletter-Masthead_800x152px_Dark-Purple_01.png
+body-classes: event-page

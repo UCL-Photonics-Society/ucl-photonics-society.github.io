@@ -1,7 +1,24 @@
 ---
 title: "Projects & Events"
 subtitle: "What we build, teach and explore together"
-title-block-banner: ../_assets/UCL-Newsletter-Masthead_800x152px_Dark-Purple_01.png
+# Event cards are generated from the event pages (*/index.qmd), one listing per academic year
+listing:
+  - id: events-2025-2026
+    contents: "*/index.qmd"
+    sort: "date desc"
+    template: ../_assets/event-card.ejs.md
+    date-format: "D MMMM YYYY"
+    fields: [title, date, date-display, description, venue, image, image-alt]
+    include:
+      academic-year: "2025-2026"
+  - id: events-2024-2025
+    contents: "*/index.qmd"
+    sort: "date desc"
+    template: ../_assets/event-card.ejs.md
+    date-format: "D MMMM YYYY"
+    fields: [title, date, date-display, description, venue, image, image-alt]
+    include:
+      academic-year: "2024-2025"
 ---
 
 ::: {.stats}
@@ -27,32 +44,12 @@ Our 2026 – 2027 events are being planned! Follow us on [Eventbrite](https://ww
 
 ## 2025 – 2026
 
-::: {.card-grid}
-{{< include 2026-10-13-hacking-smart-homes/_card.qmd >}}
-
-{{< include 2026-08-14-uclightcommands-hackathon/_card.qmd >}}
-
-{{< include 2026-07-21-laser2000-photonics-showcase/_card.qmd >}}
-
-{{< include 2026-01-16-laser2000-networking-showcase/_card.qmd >}}
-
-{{< include 2025-12-02-moku-delta-showcase/_card.qmd >}}
-
-{{< include 2025-10-22-thorlabs-mobile-photonics-lab/_card.qmd >}}
-
-{{< include 2025-10-15-photon-design-picwave-workshop/_card.qmd >}}
-
+::: {#events-2025-2026}
 :::
 
 ## 2024 – 2025
 
-::: {.card-grid}
-{{< include 2025-05-06-gdsfactory-pic-design/_card.qmd >}}
-
-{{< include 2024-11-28-reproducible-code-workshop/_card.qmd >}}
-
-{{< include 2024-11-14-laser-cut-pizza-social/_card.qmd >}}
-
+::: {#events-2024-2025}
 :::
 
 ::: {.callout-tip appearance="simple"}

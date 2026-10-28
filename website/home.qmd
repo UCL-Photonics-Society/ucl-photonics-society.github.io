@@ -4,6 +4,15 @@ title-block-banner: _assets/UCL-Newsletter-Masthead_800x152px_Dark-Purple_01.png
 # Makes the site root (https://ucl-photonics-society.github.io/) redirect here
 aliases:
   - ../index.html
+# "Recent Highlights": the 3 most recent events, picked automatically by date
+listing:
+  id: latest-events
+  contents: projects/*/index.qmd
+  sort: "date desc"
+  max-items: 3
+  template: _assets/event-card.ejs.md
+  date-format: "D MMMM YYYY"
+  fields: [title, date, date-display, description, venue, image, image-alt]
 ---
 
 ::: {.hero style="background-image: url('_assets/background.png');"}
@@ -91,12 +100,7 @@ Pizza, drinks and good conversations with the photonics community.
 
 ## Recent Highlights
 
-::: {.card-grid}
-{{< include projects/2026-10-13-hacking-smart-homes/_card.qmd >}}
-
-{{< include projects/2026-08-14-uclightcommands-hackathon/_card.qmd >}}
-
-{{< include projects/2026-07-21-laser2000-photonics-showcase/_card.qmd >}}
+::: {#latest-events}
 :::
 
 ::: {.callout-tip appearance="simple"}

@@ -145,6 +145,18 @@ h2 {
   .venue { display: block; margin-top: 0.6rem; font-size: 0.8rem; color: $ucl-purple; .bi { font-size: 1em; color: $photon-violet; } }
 }
 
+// Event cards are links to the event page
+a.event-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  h4 { color: $body-color; }
+  &:hover h4 { color: $photon-violet; }
+}
+
+// Event pages: the date is shown in the page body instead (supports multi-day events)
+.event-page .quarto-title-meta { display: none !important; }
+
 // ---------- Partner logos ----------
 .logo-wall {
   display: grid;

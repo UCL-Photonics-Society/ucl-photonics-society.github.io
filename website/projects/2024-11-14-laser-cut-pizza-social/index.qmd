@@ -1,0 +1,15 @@
+---
+title: "Laser-Cut Pizza Social"
+date: 2024-11-14
+description: "A slice of our upcoming workshops & events — with pizza! 🍕 50 attendees."
+venue: "Roberts Building, Barlow Room"
+academic-year: "2024-2025"
+image: banner.jpg
+image-alt: "Laser Cut Social"
+---
+
+![](banner.jpg){fig-alt="Laser Cut Social"}
+
+<i class="bi bi-calendar-event"></i> **14 November 2024** · <i class="bi bi-geo-alt"></i> Roberts Building, Barlow Room
+
+[← All projects & events](../overview.qmd)

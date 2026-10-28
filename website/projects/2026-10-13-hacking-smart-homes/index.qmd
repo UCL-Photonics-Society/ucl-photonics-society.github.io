@@ -1,0 +1,16 @@
+---
+title: "Hacking Smart Homes with UCLightCommands × Thorlabs"
+date: 2026-10-13
+date-display: "13 – 16 October 2026"   # shown instead of "date" (multi-day events)
+description: "A week of live demos with the Thorlabs Mobile Photonics Bike, featuring our very own UCLightCommands demo. It closed with a seminar session on photonics and education starring Bill Warger, Director of Photonics Education at Thorlabs. 🎤"
+venue: "Across UCL campus"
+academic-year: "2025-2026"
+image: banner.jpg
+image-alt: "Hacking Smart Homes with UCLightCommands × Thorlabs"
+---
+
+![](banner.jpg){fig-alt="Hacking Smart Homes with UCLightCommands × Thorlabs"}
+
+<i class="bi bi-calendar-event"></i> **13 – 16 October 2026** · <i class="bi bi-geo-alt"></i> Across UCL campus
+
+[← All projects & events](../overview.qmd)
