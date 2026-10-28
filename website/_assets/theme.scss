@@ -141,6 +141,7 @@ h2 {
   p { margin: 0; font-size: 0.92rem; color: lighten($body-color, 25%); }
   img { width: 100%; border-radius: 10px; margin-bottom: 0.6rem; }
   .date { font-size: 0.8rem; font-weight: 600; color: $photon-violet; text-transform: uppercase; letter-spacing: 0.05em; }
+  .venue { display: block; margin-top: 0.6rem; font-size: 0.8rem; color: $ucl-purple; .bi { font-size: 1em; color: $photon-violet; } }
 }
 
 // ---------- Partner logos ----------

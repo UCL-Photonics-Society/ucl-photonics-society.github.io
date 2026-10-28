@@ -21,7 +21,7 @@ website:
     left:
       - text: "Home"
         href: website/home.qmd
-      - text: "Projects"
+      - text: "Projects & Events"
         href: website/projects/overview.qmd
       - text: "Annual Reports"
         menu:
