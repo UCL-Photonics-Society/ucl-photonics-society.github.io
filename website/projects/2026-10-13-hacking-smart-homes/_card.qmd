@@ -1,11 +1,11 @@
 ::: {.photon-card}
 ![](/website/projects/2026-10-13-hacking-smart-homes/banner.jpg){fig-alt="Hacking Smart Homes with UCLightCommands × Thorlabs"}
 
-[13 October 2026]{.date}
+[13 – 16 October 2026]{.date}
 
 #### Hacking Smart Homes with UCLightCommands × Thorlabs
 
-Live demos run by society volunteers during the Thorlabs Mobile Photonics Bike week on campus.
+A week of live demos with the Thorlabs Mobile Photonics Bike, featuring our very own UCLightCommands demo. It closed with a seminar session on photonics and education starring Bill Warger, Director of Photonics Education at Thorlabs. 🎤
 
-[<i class="bi bi-geo-alt"></i> University College London]{.venue}
+[<i class="bi bi-geo-alt"></i> Across UCL campus]{.venue}
 :::
