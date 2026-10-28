@@ -1,5 +1,5 @@
 ---
-title: "Student Chapter Annual Report 2025-2026"
+title: "Student Chapter Annual Report 2024-2025"
 title-block-banner: ../_assets/UCL-Newsletter-Masthead_800x152px_Dark-Purple_01.png
 author:
   - name: David Gerard
@@ -10,7 +10,7 @@ author:
       - name: University College London
         city: London
 abstract: >
-  This report summarises the activities and achievements of the UCL Photonics Society during the academic year 2025-2026. It highlights our initiatives, events, and contributions to the photonics community, reflecting our commitment to fostering innovation and collaboration in the field.
+  This report summarises the activities and achievements of the UCL Photonics Society during the academic year 2024-2025. It highlights our initiatives, events, and contributions to the photonics community, reflecting our commitment to fostering innovation and collaboration in the field.
 ---
 
 The UCL Optical Student Chapter, founded in July 2024 and known as the UCL Photonics Society is proud to submit this report highlighting our achievements for the year 2024/2025 and presenting our goals for 2025/2026.
