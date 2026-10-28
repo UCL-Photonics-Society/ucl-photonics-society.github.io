@@ -1,0 +1,15 @@
+---
+title: "Good Practices for Reproducible Open Source Code"
+date: 2024-11-28
+description: "Lecture by a staff engineer at Xelix, followed by a hands-on lab cleaning up a messy codebase."
+venue: "1-19 Torrington Place"
+academic-year: "2024-2025"
+image: banner.jpg
+image-alt: "Good Practices for Reproducible Open Source Code"
+---
+
+![](banner.jpg){fig-alt="Good Practices for Reproducible Open Source Code"}
+
+<i class="bi bi-calendar-event"></i> **28 November 2024** · <i class="bi bi-geo-alt"></i> 1-19 Torrington Place
+
+[← All projects & events](../overview.qmd)

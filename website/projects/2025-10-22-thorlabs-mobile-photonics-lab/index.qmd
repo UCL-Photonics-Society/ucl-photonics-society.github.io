@@ -1,0 +1,16 @@
+---
+title: "Thorlabs Mobile Photonics Lab @ UCL"
+date: 2025-10-22
+date-display: "22 – 23 October 2025"   # shown instead of "date" (multi-day events)
+description: "Two days of live Optical Coherence Tomography demos. 52 sign-ups, likely 80+ attendees."
+venue: "Malet Place Engineering Building, 6.02"
+academic-year: "2025-2026"
+image: banner.jpg
+image-alt: "Thorlabs Mobile Photonics Lab"
+---
+
+![](banner.jpg){fig-alt="Thorlabs Mobile Photonics Lab"}
+
+<i class="bi bi-calendar-event"></i> **22 – 23 October 2025** · <i class="bi bi-geo-alt"></i> Malet Place Engineering Building, 6.02
+
+[← All projects & events](../overview.qmd)

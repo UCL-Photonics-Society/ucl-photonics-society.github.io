@@ -1,30 +1,315 @@
-Agency Jekyll theme
-====================
+# 💡 UCL Photonics Society — Website
 
-Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
+This repository contains the source of the **UCL Photonics Society** website, live at
+**<https://ucl-photonics-society.github.io>**.
 
-# How to use
+The website is built with [Quarto](https://quarto.org) and hosted for free on [GitHub Pages](https://pages.github.com).
+You **don't need to know how to code** to contribute: pages are written in Markdown, a very simple text format.
 
-###Portfolio 
+> [!TIP]
+> New to all of this? Follow the sections **in order**. The setup is only done once (~30 minutes), and after that, updating the website takes a few minutes.
 
-Portfolio projects are in '/_posts'
+---
 
-Images are in '/img/portfolio'
+## 📁 Repository structure
 
-###About
+```text
+ucl-photonics-society.github.io/
+├── _quarto.yml                  ← website settings: title, navigation bar, footer, theme
+├── pyproject.toml / uv.lock     ← Python environment (managed by uv, don't edit by hand)
+├── README.md                    ← this guide
+├── .github/workflows/
+│   ├── build-check.yml          ← checks that pull requests build (GitHub Actions)
+│   └── publish.yml              ← publishes the website when main changes (GitHub Actions)
+└── website/                     ← ✏️ ALL THE PAGES LIVE HERE
+    ├── home.qmd                 ← home page
+    ├── projects/
+    │   ├── overview.qmd         ← "Projects & Events" page
+    │   ├── README.md            ← how this folder works
+    │   ├── _metadata.yml        ← settings shared by all pages in this folder
+    │   └── 2025-12-02-moku-delta-showcase/   ← one folder per event (YYYY-MM-DD-name)
+    │       ├── index.qmd        ← the event's page (its header also fills the event cards)
+    │       └── banner.jpg       ← optional event picture
+    ├── annual_reports/
+    │   ├── annual_report_24_25.qmd
+    │   └── annual_report_25_26.qmd
+    └── _assets/                 ← images, logos, colour theme (theme.scss), card template
+        └── logos/               ← partner logos
+```
 
-Images are in '/img/about/'
+- Every `.qmd` file in `website/` becomes a page of the website (`home.qmd` → `home.html`).
+- To add a page to the navigation bar, add it under `navbar:` in `_quarto.yml`.
+- Colours and styles (cards, buttons, hero banner…) are defined in `website/_assets/theme.scss`.
+- Files and folders starting with `_` (like `_assets/` or `_metadata.yml`) are **not** pages.
+- The built website goes to `.quarto_output/` — it is generated automatically, **never edit or commit it**.
 
-###Team
+---
 
-Team members and info are in '_config.yml'
+## 🧑‍💻 Contributor guide
 
-Images are in '/img/team/'
+### 1. Setup steps (only once)
 
+#### 1.1 Install the tools
 
-# Demo
+| Tool | What it's for | Where to get it |
+|------|---------------|-----------------|
+| **Git** | Keeps track of every change to the files | <https://git-scm.com/downloads> — Windows users: this installs **Git Bash**, keep the default options |
+| **VS Code** | The text editor you'll write pages in | <https://code.visualstudio.com> |
+| **Quarto** | Turns `.qmd` files into web pages | <https://quarto.org/docs/get-started/> |
+| **Quarto extension for VS Code** | Syntax highlighting + live preview button | In VS Code: *Extensions* tab (left bar, four squares icon) → search **"Quarto"** → *Install* |
 
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
+You also need a free **GitHub account** (<https://github.com/signup>). Ask a committee member to add you to the [UCL-Photonics-Society](https://github.com/UCL-Photonics-Society) organisation.
 
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+#### 1.2 Open a terminal in VS Code
+
+In VS Code, open the menu **Terminal → New Terminal**. A panel opens at the bottom: this is where you type the commands below (copy-paste them, then press <kbd>Enter</kbd>).
+
+> [!NOTE]
+> **Windows users:** in the terminal panel, click the small **˅** arrow next to the **+** and choose **Git Bash**, so that the commands below work as written.
+
+#### 1.3 Tell Git who you are
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@ucl.ac.uk"
+```
+
+Use the same email as your GitHub account.
+
+#### 1.4 Install uv (Python environment manager)
+
+[uv](https://docs.astral.sh/uv/) installs the Python packages the website needs, in an isolated environment.
+
+- **macOS / Linux / Git Bash:**
+
+  ```bash
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+  ```
+
+- **Windows (PowerShell)**, if the above fails:
+
+  ```powershell
+  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+  ```
+
+Close and reopen VS Code afterwards, then check it worked with `uv --version`.
+
+#### 1.5 Download (clone) the repository
+
+```bash
+cd ~/Documents
+git clone https://github.com/UCL-Photonics-Society/ucl-photonics-society.github.io.git
+```
+
+Then in VS Code: **File → Open Folder…** and select the `ucl-photonics-society.github.io` folder. Open a new terminal (it now opens inside the project folder).
+
+#### 1.6 Set up the Python environment
+
+```bash
+uv sync
+```
+
+This creates a `.venv/` folder with everything needed. ✅ You're ready!
+
+#### 1.7 Preview the website on your computer
+
+```bash
+uv run quarto preview
+```
+
+Your browser opens the website at a local address (e.g. `http://localhost:4321`). Every time you **save** a file, the page refreshes automatically. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to stop.
+
+---
+
+### 2. Quarto 101
+
+[Quarto](https://quarto.org) is an open-source publishing system: you write **Markdown** files (`.qmd`), and Quarto converts them to a styled website.
+
+Each `.qmd` file has two parts:
+
+```markdown
+---
+title: "My page title"          ← the header ("front matter"): page settings
+---
+
+## A section title               ← the content, in Markdown
+
+Some **bold** text, some *italic* text and a [link](https://www.optica.org).
+
+- a bullet point
+- another one
+
+![An image](/website/_assets/logo_purple.png)
+
+::: {.callout-tip}
+A coloured information box!
+:::
+```
+
+Handy resources:
+
+- 📘 [Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html) — everything about formatting text
+- 🧱 [Callouts](https://quarto.org/docs/authoring/callouts.html), [figures](https://quarto.org/docs/authoring/figures.html), [tables](https://quarto.org/docs/authoring/tables.html)
+- 🌐 [Quarto websites](https://quarto.org/docs/websites/) — navigation, footer, site settings
+- 🎨 [HTML themes](https://quarto.org/docs/output-formats/html-themes.html) — how `theme.scss` works
+- 🔣 [Bootstrap icons](https://icons.getbootstrap.com) — icons used on the site, e.g. `<i class="bi bi-lightbulb"></i>`
+
+> [!TIP]
+> The home page uses a few custom blocks you can copy-paste: `::: {.card-grid}` with `::: {.photon-card}` inside (activity / event cards), `::: {.stats}` (big numbers), `::: {.logo-wall}` (partner logos) and `::: {.social-row}` (buttons). Look at `website/home.qmd` for examples.
+
+---
+
+### 3. GitHub Pages 101
+
+[GitHub Pages](https://docs.github.com/en/pages) is a free service from GitHub that hosts static websites straight from a repository.
+
+How our website gets online:
+
+```text
+ you edit a .qmd file  ──►  Pull Request to main  ──►  automatic build check ✅
+                                                           │
+                                     merge into main  ◄────┘
+                                           │
+                                           ▼
+                       GitHub Actions renders the site with Quarto
+                                           │
+                                           ▼
+                  🌐 published at https://ucl-photonics-society.github.io
+```
+
+- The automation lives in `.github/workflows/` and runs on GitHub's servers — nothing to do on your side:
+  - **Check website build** (`build-check.yml`) runs on every pull request to `main`, and again on every new commit pushed to its branch. It only checks that the website builds.
+  - **Publish website** (`publish.yml`) runs on every commit on `main` (i.e. when a pull request is merged) and puts the new website online.
+- You can follow it in the **Actions** tab of the repository. A green ✅ means the website was built (or published) successfully; a red ❌ means something is broken — click on it to read the error.
+- Changes usually appear online **1–2 minutes** after merging.
+
+> [!IMPORTANT]
+> One-time admin setting: in the repository **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**.
+
+---
+
+### 4. Contribution workflow
+
+> [!WARNING]
+> **Never work directly on `main`.** `main` is the live website. Always make your changes on a separate *branch*, then ask for them to be merged through a *Pull Request* (PR).
+
+**① Create a branch on GitHub**
+On the [repository page](https://github.com/UCL-Photonics-Society/ucl-photonics-society.github.io), click the branch dropdown (top-left, shows `main`), type a short name such as `update-committee-2026`, and click **Create branch: update-committee-2026 from main**.
+
+**② Switch to your branch in VS Code** (terminal):
+
+```bash
+git fetch
+git switch update-committee-2026
+uv sync
+```
+
+**③ Make your changes**
+Edit the `.qmd` files and check the result live with `uv run quarto preview`.
+
+**④ Save your changes with Git**
+
+```bash
+git status                                   # see which files changed
+git add website/home.qmd                     # pick the files to save (or "git add ." for all)
+git commit -m "Add 2026-2027 committee"      # short message describing the change
+git push                                     # send them to GitHub
+```
+
+> [!TIP]
+> Prefer clicking to typing? VS Code's **Source Control** tab (left bar, branch icon) does the same: stage with **+**, write a message, click **Commit**, then **Sync Changes**.
+
+**⑤ Open a Pull Request**
+Back on GitHub, a yellow banner shows *"update-committee-2026 had recent pushes"* → click **Compare & pull request**. Make sure it goes **into `main`**, describe your changes, and click **Create pull request**.
+
+**⑥ Check that the tests pass**
+At the bottom of the PR, wait for the **Check website build** check to turn green ✅. If it's red ❌, click **Details** to see the error, fix it on your branch, and push again (steps ③–④) — the PR updates automatically.
+
+**⑦ Merge 🎉**
+Once a committee member has reviewed it, click **Merge pull request**. The website is rebuilt and published automatically within a couple of minutes.
+
+---
+
+### 5. Adding an event
+
+Each event is a small page in its own folder in `website/projects/`. Event cards are **generated automatically** from these pages:
+
+- the *Projects & Events* page lists every event, grouped by academic year, newest first;
+- the home page **Recent Highlights** always shows the **3 most recent** events (by `date`).
+
+So adding an event = adding one folder. No other file to edit! ✨
+
+**① Create a folder** named after the event date and a short name: `website/projects/2026-11-05-my-new-event/`
+
+**② Add `index.qmd`** inside that folder (copy one from another event and edit it):
+
+```markdown
+---
+title: "My New Event"
+date: 2026-11-05                         # used to sort events (YYYY-MM-DD)
+date-display: "5 – 6 November 2026"      # optional: only for multi-day events
+description: "One or two sentences describing the event."
+venue: "Malet Place Engineering Building"
+academic-year: "2026-2027"               # which section of the Projects & Events page
+image: banner.jpg
+image-alt: "Short image description"
+---
+
+![](banner.jpg){fig-alt="Short image description"}
+
+<i class="bi bi-calendar-event"></i> **5 – 6 November 2026** · <i class="bi bi-geo-alt"></i> Malet Place Engineering Building
+
+[← All projects & events](../overview.qmd)
+```
+
+Everything between the two `---` lines fills the card; everything below is the event's own page (clicking a card opens it). Feel free to add photos or a short write-up there!
+
+**③ Add the picture** as `banner.jpg` in the same folder (a 2:1 picture looks best, e.g. 1000 × 500 px). No picture? Remove the `image:` / `image-alt:` lines and the `![](banner.jpg)` line.
+
+**④ Preview** with `uv run quarto preview`: the new card appears on both pages. 🎉
+
+> [!NOTE]
+> **First event of a new academic year?** Its section must be created once in `website/projects/overview.qmd`: copy one of the blocks under `listing:` in the header, change the two `2025-2026` values (`id` and `academic-year`), then add the matching heading and placeholder in the page:
+>
+> ```markdown
+> ## 2026 – 2027
+>
+> ::: {#events-2026-2027}
+> :::
+> ```
+
+---
+
+### 6. Exporting an annual report to PDF for Optica
+
+Each year, the chapter submits an annual report to [Optica](https://www.optica.org). We write it **once** as a `.qmd` page (so it's on the website), then export the same file to PDF for the submission.
+
+**① Create the new report** by copying last year's file, e.g. `website/annual_reports/annual_report_25_26.qmd` → `annual_report_26_27.qmd`, and update its title, author and content. Add it to the **Annual Reports** menu in `_quarto.yml`:
+
+```yaml
+        menu:
+          - text: "2026 – 2027"
+            href: website/annual_reports/annual_report_26_27.qmd
+```
+
+**② Export it to PDF** (in the VS Code terminal):
+
+```bash
+uv run quarto render website/annual_reports/annual_report_26_27.qmd --to typst
+```
+
+This uses [Typst](https://quarto.org/docs/output-formats/typst.html), which comes bundled with Quarto — nothing else to install.
+
+**③ Find the PDF** at `.quarto_output/website/annual_reports/annual_report_26_27.pdf`. Open it, check that everything looks right, and upload it to Optica.
+
+> [!NOTE]
+> The PDF is a generated file: **don't commit it** (`.quarto_output/` is ignored by Git). The `.qmd` file is the source of truth — re-run step ② whenever you change it.
+
+> [!TIP]
+> The website-only settings in the report header (like `title-block-banner`) are simply ignored in the PDF. To tweak the PDF layout (margins, fonts, page numbers…), see the [Typst format options](https://quarto.org/docs/reference/formats/typst.html).
+
+---
+
+## 🆘 Need help?
+
+Contact the committee at [photonics.society@ucl.ac.uk](mailto:photonics.society@ucl.ac.uk) or on [LinkedIn](https://www.linkedin.com/company/ucl-photonics-society/).

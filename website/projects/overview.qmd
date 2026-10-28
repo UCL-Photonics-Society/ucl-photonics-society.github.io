@@ -1,0 +1,92 @@
+---
+title: "Projects & Events"
+subtitle: "What we build, teach and explore together"
+# Event cards are generated from the event pages (*/index.qmd), one listing per academic year
+listing:
+  - id: events-2025-2026
+    contents: "*/index.qmd"
+    sort: "date desc"
+    template: ../_assets/event-card.ejs.md
+    date-format: "D MMMM YYYY"
+    fields: [title, date, date-display, description, venue, image, image-alt]
+    include:
+      academic-year: "2025-2026"
+  - id: events-2024-2025
+    contents: "*/index.qmd"
+    sort: "date desc"
+    template: ../_assets/event-card.ejs.md
+    date-format: "D MMMM YYYY"
+    fields: [title, date, date-display, description, venue, image, image-alt]
+    include:
+      academic-year: "2024-2025"
+---
+
+::: {.stats}
+::: {.stat}
+[10]{.num}[Events]{.label}
+:::
+::: {.stat}
+[3]{.num}[Academic years]{.label}
+:::
+::: {.stat}
+[100%]{.num}[Free to attend]{.label}
+:::
+:::
+
+Most events are free to book on our [Eventbrite page](https://www.eventbrite.co.uk/o/102446916411) 🎟️ — follow us on [Instagram](https://www.instagram.com/ucl.photonicssociety/) and [LinkedIn](https://www.linkedin.com/company/ucl-photonics-society/) for everything else!
+
+## 2026 – 2027
+
+::: {.callout-note}
+## 🚧 Coming soon
+Our 2026 – 2027 events are being planned! Follow us on [Eventbrite](https://www.eventbrite.co.uk/o/102446916411) and [LinkedIn](https://www.linkedin.com/company/ucl-photonics-society/) to be the first to know.
+:::
+
+## 2025 – 2026
+
+::: {#events-2025-2026}
+:::
+
+## 2024 – 2025
+
+::: {#events-2024-2025}
+:::
+
+::: {.callout-tip appearance="simple"}
+Looking for more detail? Our [2025 – 2026](../annual_reports/annual_report_25_26.qmd) and [2024 – 2025](../annual_reports/annual_report_24_25.qmd) annual reports cover every event, including talks and poster presentations.
+:::
+
+## Coming up: projects
+
+::: {.callout-note}
+## 🚧 Coming soon
+UCL Photonics Society's ongoing and past projects will soon be listed here.
+:::
+
+::: {.card-grid}
+::: {.photon-card}
+<i class="bi bi-cpu"></i>
+
+#### Photonic IC design
+
+Tutorials and workflows for designing photonic integrated circuits with open-source tools such as GDSFactory.
+:::
+::: {.photon-card}
+<i class="bi bi-journal-code"></i>
+
+#### Reproducible code
+
+Guides to good practices for open-source scientific code, from our hands-on workshops.
+:::
+::: {.photon-card}
+<i class="bi bi-trophy"></i>
+
+#### Hackathon
+
+Our upcoming research-focused hackathon for hands-on, interdisciplinary collaboration.
+:::
+:::
+
+## Got an idea?
+
+Want to start or showcase a photonics project with the society? [Get in touch](mailto:photonics.society@ucl.ac.uk) or message us on [LinkedIn](https://www.linkedin.com/company/ucl-photonics-society/) — we'd love to hear from you! 💡

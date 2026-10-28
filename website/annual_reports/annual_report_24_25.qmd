@@ -1,0 +1,134 @@
+---
+title: "Student Chapter Annual Report 2024-2025"
+title-block-banner: ../_assets/UCL-Newsletter-Masthead_800x152px_Dark-Purple_01.png
+author:
+  - name: David Gerard
+    id: dg
+    orcid: 0009-0004-9171-6836
+    email: david.gerard.23@ucl.ac.uk
+    affiliation:
+      - name: University College London
+        city: London
+abstract: >
+  This report summarises the activities and achievements of the UCL Photonics Society during the academic year 2024-2025. It highlights our initiatives, events, and contributions to the photonics community, reflecting our commitment to fostering innovation and collaboration in the field.
+---
+
+The UCL Optical Student Chapter, founded in July 2024 and known as the UCL Photonics Society is proud to submit this report highlighting our achievements for the year 2024/2025 and presenting our goals for 2025/2026.
+
+## The Society's mission statement
+
+Optics and photonics are fundamental to research across disciplines such as telecommunications, physics, microscopy, and medical science. However, at UCL, these communities often operate in isolation, with limited cross-disciplinary engagement.
+
+The UCL Photonics Society was created to bridge these gaps by providing a platform for events that unite students, researchers, academics, and industry partners, encouraging multidisciplinary exchange and collaborative research.
+
+## 2024/2025 accomplishments
+
+### Summary
+
+Over the past period, the UCL Photonics Society has focused on building an active, inclusive photonics community by combining outreach, technical depth, and industry engagement. Its activities have ranged from faculty-wide launch events and networking socials to advanced technical seminars, hands-on workshops, and large-scale hybrid training sessions, alongside poster presentations to raise visibility with students, researchers, and industry partners.
+
+A strong emphasis has been placed on practical skills (e.g. PIC design, reproducible open-source practices), live demonstrations of cutting-edge photonics technologies, and cross-institutional collaboration, all delivered with high attendance, minimal cost, and growing reach across UCL, the UK, and Europe.
+
+### Events
+
+#### *Meet & Greet the Committee (September 16th 2024)*
+
+Our first faculty-wide launch-event for students to get to know us, the society, and our goals. Promotion of optics and photonics to students who may not be familiar with it.
+
+- Number of attendees: 30-40
+- Amount spent: £62 (pizza and drinks)
+
+#### *Technical Seminar Talk by Professor Juergen Czarske (30th September 2024)*
+
+Our first faculty-wide launch-event for students to get to know us, the society, and our goals. Promotion of optics and photonics to students who may not be familiar with it.
+
+- Number of attendees: 20-30
+- Amount spent: £3 (biscuits)
+
+#### *Laser-cut Pizza Social Presenting a Slice of Future Workshops & Events (14^th^ November 2024)*
+
+Exclusive preview of the events we are planning to organise this year- workshops, demonstrations, and hackathon. We also presented opportunities for students to officially be engaged with society-run events such as technical demonstrations, etc.
+
+- Number of attendees: 50 (we setup an Eventbrite page for students to sign up, which we started using since this event).
+- Amount spent: £88 (pizza and drinks)
+
+#### *Transferable Skills Workshop - Good Practices for Reproducible Open Source Code (28^th^ November 2024)*
+
+In this first workshop, Mikuláš Poul (staff engineer at Xelix) gave a lecture to a group of around 45 students and researchers in which he presented tools and methods that have proven necessary to building successful python libraries and projects, as well as providing insights into his career as a staff engineer and OSS library maintainer. The lecture was followed by an active learning exercise: a hands-on computer lab of my design, in which attendees had to reorganise a messy codebase using the concepts taught in the lecture.
+
+- Number of people who signed up: 72, 45 attended.
+- Amount spent: FREE
+
+#### *Poster Presentation at the Centre for Doctoral Training in Photonics and Electronics Systems (collaboration with the Cambridge Photonics Society) (31^st^ March 2025)*
+
+Presented a poster on the activities of the two societies, the kind of events we organise, with the aim of attracting industry partners and sponsors.
+
+- Amount spent: FREE (poster printing cost paid by the Centre for Doctoral Training in Photonics and Electronics Systems)
+
+#### *UK/EU PIC design with GDSFactory+ (6^th^ May 2025)*
+
+GDSFactory is a powerful Python library for designing a wide range of complex systems, including photonic circuits, analog devices, quantum components, MEMs, 3D printed objects, and PCBs.
+
+We coordinated a hybrid GDSFactory+ workshop with 7 simultaneous sessions taking places at universities across the UK and EU (Birmingham, Cambridge, Edinburgh, Enschede, Joensuu, London, Southampton), some of which were hosted by other Optica student chapters.
+
+- Number of people who signed up: 157 (so much so that the GDSFactory+ server could not keep up).
+- Amount spent: FREE
+
+#### *Poster Presentation at the London Lab Live (collaboration with the Cambridge Photonics Society) (14^th^-15^th^ May 2025)*
+
+Presented a poster on the activities of the two societies, the kind of events we organise, with the aim of attracting industry partners and sponsors.
+
+- Amount spent: FREE (poster printing cost paid by the Centre for Doctoral Training in Photonics and Electronics Systems)
+
+#### *Laser Physics &PICWave Workshop by Photon Design (15^th^ October 2025)*
+
+Hands-on photonic system design workshop led by experts from Photon Design.
+
+- Number of people who signed up:26
+- Amount spent: FREE
+
+#### *Thorlabs Mobile Photonics Lab @ UCL (22nd -23rd October 2025)*
+
+The UCL Photonics Society and the Department of Electronic and Electrical Engineering partnered with Thorlabs to bring live demos of Optical Computation Tomography (OCT).
+
+The event took place over two days, with sessions of ~30min during which two demonstration were conducted:
+
+1. The first demonstration displayed the capabilities of Thorlab's GAN111 OCT system on multiple samples.
+2. The second demonstration was focused on showing the operating principles behind OCT, uses a Michelson Interferometer setup, and showed phenomena such as Interference, White Light Interference, Time domain OCT, and Spectral Domain OCT.
+
+Although we asked participants to register, a lot of people just walked by and joined sessions, making the actual number of attendees difficult to estimate.
+
+- Number of people who signed up: 52 (but total number of attendees likely > 80)
+- Amount spent: FREE
+
+#### *Poster Presentation at the UCL EEE Research Fair (31^st^ March 2025)*
+
+Presented a poster on the activities of the society to undergrad and master students in the EEE department, and help the Fleming Society organise the event.
+
+- Amount spent: FREE (poster printing cost paid by the Centre for Doctoral Training in Photonics and Electronics Systems)
+
+#### *Moku:Delta device showcase and Q&A lunch with Liquid Instruments and Laser 2000 (2^nd^ December 2025)*
+
+Exclusive seminar for researchers and academics where a speaker from Liquid Instrument and a representative from Laser 2000 explored common test & measurement, and how these can be mitigated with an FPGA-based, software defined approach to instrumentation.
+
+- Number of people who signed up: 11
+- Amount spent: FREE (lunch covered by Laser 2000, although we are yet to be reimbursed).
+
+#### *Networking and Photonics equipment showcase with Laser 2000 (16^th^ January 2025)*
+
+In-person device showcase featuring Networking and Photonics experimental equipment,
+
+Including Linear stages, Laser diodes, Network test and measurement equipment (Viavi's ONA 800 for example), Patchcords, Cleaning equipment, and Devices from the Moku family. In addition, they will be bringing some of their incredible Lego merch
+
+- Number of people who signed up: 60 (as of January 15^th^)
+- Amount spent: FREE
+
+## 2025/2026 Goals
+
+Looking ahead, the UCL Photonics Society aims to **build on its current momentum** by continuing to organise high-quality industry-led events that expose members to state-of-the-art technologies, real-world applications, and career pathways in photonics.
+
+To sustain this growth, the Society will undertake an **organisational restructuring** to more effectively distribute responsibilities within the committee, improve continuity, and enable a higher volume of activities without overburdening individual members.
+
+We also plan to significantly **broaden our reach** beyond the CDT in Photonics and Electronic Systems and the EEE Department, engaging students and researchers across other UCL faculties where optics and photonics play a key role. In parallel, we will **strengthen engagement with academics and faculty members**, ensuring that the Society serves not only as a student hub but also as a platform for research-level exchange and collaboration.
+
+Finally, we plan to **launch new flagship initiatives**, including a research-focused hackathon to encourage hands-on interdisciplinary collaboration, and the development of a dedicated Society website to centralise information, showcase activities, and support long-term visibility and partnerships.

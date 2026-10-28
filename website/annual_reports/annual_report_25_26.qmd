@@ -1,0 +1,104 @@
+---
+title: "Student Chapter Annual Report 2025-2026"
+title-block-banner: ../_assets/UCL-Newsletter-Masthead_800x152px_Dark-Purple_01.png
+author:
+  - name: David Gerard
+    id: dg
+    orcid: 0009-0004-9171-6836
+    email: david.gerard.23@ucl.ac.uk
+    affiliation:
+      - name: University College London
+        city: London
+abstract: >
+  This report summarises the activities and achievements of the UCL Photonics Society during the academic year 2025-2026. It highlights how we increased the visibility of the Society at UCL, deepened our collaborations with industry partners, and formed the core team that will lead the Society in 2026-2027.
+---
+
+The UCL Optical Student Chapter, founded in July 2024 and known as the UCL Photonics Society is proud to submit this report highlighting our achievements for the year 2025/2026 and presenting our goals for 2026/2027.
+
+## The Society's mission statement
+
+Optics and photonics are fundamental to research across disciplines such as telecommunications, physics, microscopy, and medical science. However, at UCL, these communities often operate in isolation, with limited cross-disciplinary engagement.
+
+The UCL Photonics Society was created to bridge these gaps by providing a platform for events that unite students, researchers, academics, and industry partners, encouraging multidisciplinary exchange and collaborative research.
+
+## 2025/2026 accomplishments
+
+### Summary
+
+Building on the foundations laid during our first year, the UCL Photonics Society focused in 2025/2026 on two objectives: **increasing the visibility of the Society at UCL**, and **deepening our collaborations with industry partners**. Our activities ranged from hands-on design workshops and live demonstrations of cutting-edge photonics technologies to equipment showcases and networking events, all delivered free of charge to attendees.
+
+Rather than multiplying one-off events, we built long-term relationships with our partners: Thorlabs (mobile photonics lab, hackathon and a week of live demos), Laser 2000 (three showcases, including one with Liquid Instruments), and Photon Design. These recurring partnerships brought state-of-the-art equipment and industry experts to UCL campus, and reached students and researchers well beyond our usual audience, including many who simply walked by our demonstrations.
+
+Finally, the UCLightCommands hackathon and the live demos organised with Thorlabs between August and October 2026 brought together a group of motivated students, from undergraduates to postdocs, who designed, built and presented their own photonics demonstration. This group now forms a **core team ready to take over the Society** for the next academic year.
+
+### Events
+
+#### *Laser Physics & PICWave Workshop by Photon Design (15^th^ October 2025)*
+
+Hands-on photonic system design workshop led by experts from Photon Design, covering laser physics and photonic circuit simulation with their PICWave software.
+
+- Number of people who signed up: 26
+- Amount spent: FREE
+
+#### *Thorlabs Mobile Photonics Lab @ UCL (22^nd^-23^rd^ October 2025)*
+
+The UCL Photonics Society and the Department of Electronic and Electrical Engineering partnered with Thorlabs to bring live demos of Optical Coherence Tomography (OCT).
+
+The event took place over two days, with sessions of ~30min during which two demonstrations were conducted:
+
+1. The first demonstration displayed the capabilities of Thorlabs' GAN111 OCT system on multiple samples.
+2. The second demonstration was focused on showing the operating principles behind OCT, using a Michelson Interferometer setup, and showed phenomena such as Interference, White Light Interference, Time domain OCT, and Spectral Domain OCT.
+
+Although we asked participants to register, a lot of people just walked by and joined sessions, making the actual number of attendees difficult to estimate.
+
+- Number of people who signed up: 52 (but total number of attendees likely > 80)
+- Amount spent: FREE
+
+#### *Moku:Delta device showcase and Q&A lunch with Liquid Instruments and Laser 2000 (2^nd^ December 2025)*
+
+Exclusive seminar for researchers and academics where a speaker from Liquid Instruments and a representative from Laser 2000 explored common test & measurement bottlenecks, and how these can be mitigated with an FPGA-based, software defined approach to instrumentation.
+
+- Number of people who signed up: 11
+- Amount spent: FREE (lunch covered by Laser 2000)
+
+#### *Networking and Photonics equipment showcase with Laser 2000 (16^th^ January 2026)*
+
+In-person device showcase featuring Networking and Photonics experimental equipment, including Linear stages, Laser diodes, Network test and measurement equipment (Viavi's ONA 800 for example), Patchcords, Cleaning equipment, and Devices from the Moku family. Laser 2000 also brought some of their incredible Lego merch.
+
+- Number of people who signed up: 60 
+- Amount spent: FREE
+
+#### *Photonics solutions showcase and engagement event with Laser 2000 (21^st^ July 2026)*
+
+Open walk-in event in the foyer of the UCL Engineering Front Building, where students and researchers could meet the Laser 2000 team and discover their solutions for optical filtering, fibre inspection, and lab automation.
+
+- Number of people who signed up: ~20
+- Amount spent: FREE
+
+#### *UCLightCommands Hackathon in collaboration with Thorlabs (14^th^ August 2026)*
+
+Design session held at UCL, in which 10 students (undergraduates, master students, PhD students, and postdocs) designed a new demonstration in collaboration with Thorlabs, based on the LightCommands study, in which microphones are hacked using a modulated laser.
+
+Work on the demonstration continued throughout September and October to build the prototype in partnership with Thorlabs, ahead of its presentation during the Thorlabs Mobile Photonics Bike week. The team is now working on a second version of the demonstration, again in partnership with Thorlabs.
+
+- Number of participants: 10
+- Amount spent: All expenses were covered by Thorlabs and UCL's Electronic and Electrical Engineering department.
+
+#### *Hacking Smart Homes with UCLightCommands × Thorlabs (13^th^-16^th^ October 2026)*
+
+Four days of live photonics demonstrations with the Thorlabs Mobile Photonics Bike, at three locations across UCL campus. Alongside Thorlabs' own demonstrations, the hackathon team presented the UCLightCommands demonstration they designed and built over the previous months.
+
+The week closed on Friday 16^th^ October with a final demonstration session, a networking lunch, and a seminar session on photonics and education starring Bill Warger, Director of Photonics Education at Thorlabs.
+
+- Number of attendees: Over 100 students, staff, faculty members, and visitors attended the demonstrations, which took place over the four days and 3 locations around the UCL campus. The final seminar session on Friday 16^th^ October was attended by 30 people.
+- Amount spent: All expenses were covered by Thorlabs and UCL's Electronic and Electrical Engineering department.
+
+## 2026/2027 Goals
+
+Looking ahead, the UCL Photonics Society will be led by the **core team formed during the UCLightCommands project**, ensuring continuity in our partnerships and in the know-how acquired over the past two years.
+
+Our main objective for 2026/2027 is to **increase the number of active Society members**. More members involved in the organisation of the Society will allow us to distribute responsibilities more effectively, and to welcome new students into the committee each year.
+
+A larger active membership will in turn allow us to **scale the number and variety of events** we organise, from industry showcases and technical seminars to hands-on workshops and networking socials, while continuing to broaden our reach across UCL faculties where optics and photonics play a key role.
+
+Finally, we plan to **develop more student-led projects**, following the example of UCLightCommands, starting with the second version of the UCLightCommands demonstration with Thorlabs. These projects give members hands-on experience of photonics research and engineering, and will be showcased on the Society website.

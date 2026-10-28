@@ -1,0 +1,15 @@
+---
+title: "Laser 2000 — Photonics solutions showcase"
+date: 2026-07-21
+description: "Walk-in event to meet the Laser 2000 team: optical filtering, fibre inspection and lab automation."
+venue: "UCL Engineering Front Building, Foyer G02"
+academic-year: "2025-2026"
+image: banner.jpg
+image-alt: "Laser 2000 — Photonics solutions showcase"
+---
+
+![](banner.jpg){fig-alt="Laser 2000 — Photonics solutions showcase"}
+
+<i class="bi bi-calendar-event"></i> **21 July 2026** · <i class="bi bi-geo-alt"></i> UCL Engineering Front Building, Foyer G02
+
+[← All projects & events](../overview.qmd)

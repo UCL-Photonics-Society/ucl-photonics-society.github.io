@@ -1,0 +1,15 @@
+---
+title: "Laser 2000 — Networking & Photonics equipment showcase"
+date: 2026-01-16
+description: "Linear stages, laser diodes, network test equipment, Moku devices… and Lego merch! 60 sign-ups."
+venue: "Malet Place Engineering Building, 6th floor lobby"
+academic-year: "2025-2026"
+image: banner.jpg
+image-alt: "Laser 2000 — Networking & Photonics equipment showcase"
+---
+
+![](banner.jpg){fig-alt="Laser 2000 — Networking & Photonics equipment showcase"}
+
+<i class="bi bi-calendar-event"></i> **16 January 2026** · <i class="bi bi-geo-alt"></i> Malet Place Engineering Building, 6th floor lobby
+
+[← All projects & events](../overview.qmd)

@@ -1,0 +1,15 @@
+---
+title: "Laser Physics & PICWave Workshop"
+date: 2025-10-15
+description: "Hands-on photonic system design workshop led by experts from Photon Design."
+venue: "Malet Place Engineering Building, 2.14"
+academic-year: "2025-2026"
+image: banner.jpg
+image-alt: "Laser Physics & PICWave Workshop"
+---
+
+![](banner.jpg){fig-alt="Laser Physics & PICWave Workshop"}
+
+<i class="bi bi-calendar-event"></i> **15 October 2025** · <i class="bi bi-geo-alt"></i> Malet Place Engineering Building, 2.14
+
+[← All projects & events](../overview.qmd)

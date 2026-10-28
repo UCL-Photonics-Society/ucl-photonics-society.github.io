@@ -1,0 +1,15 @@
+---
+title: "UCLightCommands Hackathon × Thorlabs"
+date: 2026-08-14
+description: "10 students, from undergrads to postdocs, designed a new demo with Thorlabs based on the LightCommands study: hacking microphones with a modulated laser. Showcased in October, and v2 is on its way! 🚀"
+venue: "University College London"
+academic-year: "2025-2026"
+image: banner.jpg
+image-alt: "UCLightCommands Hackathon × Thorlabs"
+---
+
+![](banner.jpg){fig-alt="UCLightCommands Hackathon × Thorlabs"}
+
+<i class="bi bi-calendar-event"></i> **14 August 2026** · <i class="bi bi-geo-alt"></i> University College London
+
+[← All projects & events](../overview.qmd)

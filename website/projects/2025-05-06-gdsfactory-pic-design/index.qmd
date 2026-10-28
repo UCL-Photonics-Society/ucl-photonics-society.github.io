@@ -1,0 +1,15 @@
+---
+title: "UK/EU PIC design with GDSFactory"
+date: 2025-05-06
+description: "Hybrid workshop (Python & no-code) across 7 universities in the UK and EU. 157 sign-ups!"
+venue: "Hybrid, 7 universities"
+academic-year: "2024-2025"
+image: banner.jpg
+image-alt: "UK/EU PIC design with GDSFactory"
+---
+
+![](banner.jpg){fig-alt="UK/EU PIC design with GDSFactory"}
+
+<i class="bi bi-calendar-event"></i> **6 May 2025** · <i class="bi bi-geo-alt"></i> Hybrid, 7 universities
+
+[← All projects & events](../overview.qmd)
